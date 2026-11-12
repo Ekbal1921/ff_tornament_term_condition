@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms &amp; Conditions - FF Tournament</title>
+  <style>
+    :root {
+      --bg-page: #F4F6F9;
+      --bg-card: #FFFFFF;
+      --bg-subtle: #EEF2F6;
+      --border: #E2E8F0;
+      --text-main: #0F172A;
+      --text-body: #334155;
+      --text-muted: #64748B;
+      --accent: #FF5E00;
+      --accent-soft: rgba(255, 94, 0, 0.12);
+      --gold: #D97706;
+      --green: #16A34A;
+      --green-soft: rgba(22, 163, 74, 0.12);
+      --red: #DC2626;
+      --red-soft: rgba(220, 38, 38, 0.10);
+      --blue: #2563EB;
+      --blue-soft: rgba(37, 99, 235, 0.10);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-page: #0B1120;
+        --bg-card: #111827;
+        --bg-subtle: #1E293B;
+        --border: #273549;
+        --text-main: #F1F5F9;
+        --text-body: #CBD5E1;
+        --text-muted: #94A3B8;
+        --accent: #FF6B1A;
+        --accent-soft: rgba(255, 107, 26, 0.16);
+        --gold: #F59E0B;
+        --green: #22C55E;
+        --green-soft: rgba(34, 197, 94, 0.15);
+        --red: #F87171;
+        --red-soft: rgba(248, 113, 113, 0.14);
+        --blue: #60A5FA;
+        --blue-soft: rgba(96, 165, 250, 0.15);
+      }
+    }
+
+    html.dark {
+      --bg-page: #0B1120;
+      --bg-card: #111827;
+      --bg-subtle: #1E293B;
+      --border: #273549;
+      --text-main: #F1F5F9;
+      --text-body: #CBD5E1;
+      --text-muted: #94A3B8;
+      --accent: #FF6B1A;
+      --accent-soft: rgba(255, 107, 26, 0.16);
+      --gold: #F59E0B;
+      --green: #22C55E;
+      --green-soft: rgba(34, 197, 94, 0.15);
+      --red: #F87171;
+      --red-soft: rgba(248, 113, 113, 0.14);
+      --blue: #60A5FA;
+      --blue-soft: rgba(96, 165, 250, 0.15);
+    }
+
+    html.light {
+      --bg-page: #F4F6F9;
+      --bg-card: #FFFFFF;
+      --bg-subtle: #EEF2F6;
+      --border: #E2E8F0;
+      --text-main: #0F172A;
+      --text-body: #334155;
+      --text-muted: #64748B;
+      --accent: #FF5E00;
+      --accent-soft: rgba(255, 94, 0, 0.12);
+      --gold: #D97706;
+      --green: #16A34A;
+      --green-soft: rgba(22, 163, 74, 0.12);
+      --red: #DC2626;
+      --red-soft: rgba(220, 38, 38, 0.10);
+      --blue: #2563EB;
+      --blue-soft: rgba(37, 99, 235, 0.10);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 16px;
+      background-color: var(--bg-page);
+      color: var(--text-body);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Bengali", Arial, sans-serif;
+      line-height: 1.7;
+      font-size: 14.5px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--accent);
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 22px;
+      color: var(--text-main);
+      line-height: 1.35;
+    }
+
+    .meta {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      line-height: 1.4;
+    }
+
+    p {
+      margin: 0 0 10px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul, ol {
+      margin: 6px 0 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: var(--text-main);
+    }
+
+    .callout {
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-top: 10px;
+      font-size: 13.5px;
+    }
+
+    .callout-red {
+      background: var(--red-soft);
+      border-left: 3px solid var(--red);
+    }
+
+    .callout-blue {
+      background: var(--blue-soft);
+      border-left: 3px solid var(--blue);
+    }
+
+    .callout-green {
+      background: var(--green-soft);
+      border-left: 3px solid var(--green);
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      padding: 10px 0 20px;
+    }
+  </style>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var t = params.get("theme");
+      if (t === "dark" || t === "light") {
+        document.documentElement.classList.add(t);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <span class="badge">⚖️ TERMS &amp; CONDITIONS</span>
+      <h1>ব্যবহারের শর্তাবলি (Terms &amp; Conditions)</h1>
+      <div class="meta">অ্যাপ: <strong>FF Tournament</strong> (<code>com.fftornament.best</code>) &bull; সর্বশেষ আপডেট: নভেম্বর ২০২৬</div>
+      <p>
+        <strong>FF Tournament</strong> অ্যাপে অ্যাকাউন্ট তৈরি, লগইন কিংবা যেকোনো টুর্নামেন্ট ও ওয়ালেট সেবা ব্যবহার করার মাধ্যমে আপনি নিচের সকল শর্তাবলি ও আমাদের গোপনীয়তা নীতি মেনে নিতে সম্মত হচ্ছেন। শর্তগুলোর কোনো অংশে আপনার অসম্মতি থাকলে অনুগ্রহ করে অ্যাপটি ব্যবহার করা থেকে বিরত থাকুন।
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>১. একজন ইউজার একটি অ্যাকাউন্ট ব্যবহারের নিয়ম</h2>
+      <ul>
+        <li><strong>একক অ্যাকাউন্ট নীতি:</strong> প্রতিটি ব্যবহারকারী কেবল <strong>একটি (১টি)</strong> ব্যক্তিগত অ্যাকাউন্ট এবং তার নিজস্ব বৈধ <strong>Free Fire UID</strong> ব্যবহার করতে পারবেন।</li>
+        <li>একই ব্যক্তি একাধিক অ্যাকাউন্ট খোলা, ভুয়া বা অন্যের UID দিয়ে নিবন্ধন করা, অথবা অ্যাকাউন্ট ভাড়া/বিক্রি/শেয়ার করা সম্পূর্ণ নিষিদ্ধ।</li>
+        <li>একাধিক অ্যাকাউন্ট ব্যবহারের প্রমাণ পাওয়া গেলে সংশ্লিষ্ট সকল অ্যাকাউন্ট নিষিদ্ধ (Ban) করা হতে পারে।</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>২. ম্যাচে অংশগ্রহণের নিয়ম (Tournament Participation Rules)</h2>
+      <ul>
+        <li>টুর্নামেন্টে জয়েন করার পর ম্যাচ শুরু হওয়ার নির্ধারিত সময় (সাধারণত ১০-১৫ মিনিট আগে) অ্যাপের <strong>Custom Match Room</strong> সেকশনে কেবল নিবন্ধিত প্লেয়ারদের জন্য Room ID ও Password প্রকাশ করা হবে।</li>
+        <li>অ্যাকাউন্টে সংযুক্ত সঠিক Free Fire UID ও নাম নিয়েই কাস্টম রুমে প্রবেশ করতে হবে এবং নির্ধারিত স্লটে বসতে হবে।</li>
+        <li><strong>রুম তথ্য গোপন রাখা:</strong> কাস্টম রুমের ID ও Password অন্য কোনো অনিবন্ধিত খেলোয়াড় বা বাইরের কারও সাথে শেয়ার করা কঠোরভাবে নিষিদ্ধ।</li>
+        <li>সময়মতো কাস্টম রুমে উপস্থিত না থাকলে বা দেরিতে জয়েন করে ম্যাচ মিস করলে কর্তৃপক্ষ দায়ী থাকবে না।</li>
+        <li>কেবল মোবাইল ডিভাইস থেকেই খেলা যাবে; PC বা Emulator ব্যবহার সম্পূর্ণ নিষিদ্ধ (যদি না কোনো নির্দিষ্ট ম্যাচে আলাদাভাবে অনুমতি দেওয়া হয়)।</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>৩. Entry Fee, Prize Money এবং ফলাফল যাচাইয়ের নিয়ম</h2>
+      <ul>
+        <li><strong>Entry Fee:</strong> কোনো টুর্নামেন্টে রেজিস্ট্রেশন করার সময় নির্ধারিত Entry Fee আপনার ওয়ালেট ব্যালেন্স থেকে স্বয়ংক্রিয়ভাবে কেটে নেওয়া হবে। একবার ম্যাচ কনফার্ম হলে সাধারণ ক্ষেত্রে এন্ট্রি ফি ফেরতযোগ্য নয়।</li>
+        <li><strong>ম্যাচ বাতিল হলে রিফান্ড:</strong> সার্ভার ত্রুটি বা অনিবার্য কারণে অ্যাডমিন কোনো টুর্নামেন্ট <strong>Cancelled</strong> করলে অংশগ্রহণকারী সকল প্লেয়ারের Entry Fee সম্পূর্ণরূপে তাদের ওয়ালেটে ফেরত দেওয়া হবে।</li>
+        <li><strong>Prize Money ও Per-Kill Reward:</strong> ম্যাচ শেষে নির্ধারিত সময়ের মধ্যে সঠিক Kills, Rank এবং প্রমাণস্বরূপ স্ক্রিনশট লিংক জমা (Submit Result) দিতে হবে। অ্যাডমিন/মডারেটর ম্যাচ স্কোরবোর্ডের সাথে মিলিয়ে অনুমোদন করলে পুরস্কারের টাকা আপনার <strong>Winning Balance</strong>-এ যুক্ত হবে।</li>
+        <li><strong>আপিল (Resubmit Claim / Appeal):</strong> কোনো ফলাফল ভুল তথ্য বা অসম্পূর্ণ প্রমাণের কারণে Reject হলে ইউজার সঠিক প্রমাণসহ পুনরায় আপিল/সাবমিট করতে পারবেন।</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>৪. ভুল Transaction ID দিলে Deposit বাতিল ও জালিয়াতি নীতি</h2>
+      <ul>
+        <li>Deposit করার সময় অ্যাপে প্রদর্শিত অফিসিয়াল bKash বা Nagad নম্বরে টাকা পাঠানোর পর সঠিক Amount, Sender Number এবং আসল <strong>Transaction ID (TrxID)</strong> দিতে হবে।</li>
+        <li><strong>ভুল বা ভুয়া TrxID:</strong> ভুল, অসম্পূর্ণ, অন্যের ব্যবহার করা বা ভুয়া Transaction ID জমা দিলে Deposit রিকোয়েস্ট সরাসরি বাতিল (<code>REJECTED</code>) করা হবে।</li>
+        <li>ইচ্ছাকৃতভাবে বারবার ভুয়া TrxID দিয়ে ব্যালেন্স নেওয়ার চেষ্টা করলে ইউজারের অ্যাকাউন্ট কোনো নোটিশ ছাড়াই স্থায়ীভাবে নিষিদ্ধ করা হবে।</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>৫. ম্যাচ চলাকালীন অসদুপায়, পুরস্কার বাতিল ও প্রতারণায় নিষেধাজ্ঞা</h2>
+      <div class="callout callout-red">
+        <strong>জিরো টলারেন্স অ্যান্টি-চিট নীতি:</strong> ম্যাচ চলাকালীন যেকোনো ধরনের অসদুপায় অবলম্বন করলে সেই ম্যাচের <strong>সকল পুরস্কার (Prize Money ও Kill Reward) তাৎক্ষণিকভাবে বাতিল</strong> করা হবে এবং সংশ্লিষ্ট অ্যাকাউন্ট স্থায়ীভাবে নিষিদ্ধ করা হবে।
+      </div>
+      <ul style="margin-top: 10px;">
+        <li><strong>নিষিদ্ধ কার্যক্রম:</strong> Hack, Mod APK, Script, Headshot Config, Antenna/Wallhack ফাইল, Macro, Bug/Glitch Abuse অথবা Solo ম্যাচে অন্য প্লেয়ারের সাথে Teaming-up করা সম্পূর্ণ নিষিদ্ধ।</li>
+        <li><strong>ভুয়া প্রমাণ ও ইচ্ছাকৃত প্রতারণা:</strong> এডিট করা স্ক্রিনশট জমা দেওয়া, ভুয়া কিল দাবি করা, সিস্টেম ম্যানিপুলেট করার চেষ্টা করা বা অন্য খেলোয়াড়দের সাথে প্রতারণা করলে অ্যাকাউন্ট স্থায়ীভাবে <strong>Banned</strong> করা হবে এবং অবৈধভাবে অর্জিত ব্যালেন্স বাতিল/ফ্রিজ করা হতে পারে।</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>৬. Withdrawal করার নিয়ম ও সময়সীমা</h2>
+      <ul>
+        <li><strong>সর্বনিম্ন ও সর্বোচ্চ সীমা:</strong> অ্যাডমিন নির্ধারিত সীমা (Withdrawal Limit) অনুযায়ী কেবল পর্যাপ্ত ব্যালেন্স থাকলেই উইথড্রয়াল রিকোয়েস্ট দেওয়া যাবে।</li>
+        <li><strong>সঠিক নম্বর প্রদান:</strong> রিকোয়েস্ট দেওয়ার সময় অবশ্যই সঠিক ব্যক্তিগত bKash বা Nagad নম্বর দিতে হবে। ইউজারের দেওয়া ভুল নম্বরে টাকা চলে গেলে কর্তৃপক্ষ কোনো দায়ভার নেবে না।</li>
+        <li><strong>সময়সীমা:</strong> প্রতিটি উইথড্রয়াল রিকোয়েস্ট অ্যাডমিনের মাধ্যমে যাচাই করা হয়। সাধারণত যাচাইয়ের পর <strong>১ থেকে ২৪ ঘণ্টার মধ্যে</strong> পেমেন্ট সম্পন্ন করা হয় (অনিবার্য টেকনিক্যাল বা মোবাইল ব্যাংকিং জটিলতায় কখনো কিছুটা অতিরিক্ত সময় লাগতে পারে)।</li>
+        <li><strong>রিজেক্ট হলে অটো-রিফান্ড:</strong> কোনো উইথড্রয়াল রিকোয়েস্ট বাতিল (<code>REJECTED</code>) করা হলে কাটা হওয়া সম্পূর্ণ টাকা ইউজারের ওয়ালেট ব্যালেন্সে পুনরায় ফেরত চলে যাবে।</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>৭. অ্যাডমিনের দায়িত্ব ও ক্ষমতার সীমা (Admin Responsibilities &amp; Authority Limits)</h2>
+      <ul>
+        <li><strong>অ্যাডমিনের দায়িত্ব:</strong> সময়মতো টুর্নামেন্ট পরিচালনা, কাস্টম রুম আইডি-পাসওয়ার্ড প্রদান, ডিপোজিট ও উইথড্রয়াল দ্রুত যাচাই করা, ম্যাচের স্কোরবোর্ড দেখে ন্যায্য প্রাইজমানি দেওয়া এবং হেল্প টিকিট ও চিটার রিপোর্টের সমাধান করা।</li>
+        <li><strong>অ্যাডমিনের ক্ষমতার সীমা:</strong>
+          <ul>
+            <li>অ্যাডমিন বা মডারেটর কখনোই কোনো ইউজারের অ্যাপ পাসওয়ার্ড বা bKash/Nagad PIN জানতে চাইবেন না।</li>
+            <li>অ্যাডমিন প্যানেলের প্রতিটি গুরুত্বপূর্ণ আর্থিক অনুমোদন, বাতিল ও অ্যাকাউন্ট অ্যাকশন অপরিবর্তনীয় <strong>Admin Audit Log</strong>-এ স্বয়ংক্রিয়ভাবে রেকর্ড হয়।</li>
+            <li>অ্যাডমিন প্রমাণ ছাড়া ব্যক্তিগত স্বার্থে কোনো বৈধ ইউজারের বৈধ ব্যালেন্স বা অর্জিত পুরস্কার কেড়ে নিতে পারবেন না।</li>
+            <li>তবে ম্যাচের ফলাফল, চিটিং রিপোর্ট ও লেনদেন যাচাইয়ের ক্ষেত্রে প্রমাণের ভিত্তিতে অ্যাডমিনের সিদ্ধান্তই চূড়ান্ত বলে গণ্য হবে; কোনো ভুল হলে ইউজার সাপোর্ট টিকিটের মাধ্যমে পুনঃপর্যালোচনার আবেদন করতে পারবেন।</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>৮. অ্যাপের নিয়ম ভঙ্গ করলে যে ব্যবস্থা নেওয়া হবে</h2>
+      <p>নিয়ম ভঙ্গের ধরন ও গুরুত্ব অনুযায়ী কর্তৃপক্ষ নিচের এক বা একাধিক ব্যবস্থা গ্রহণ করতে পারবে:</p>
+      <ol>
+        <li><strong>সতর্কবার্তা (Warning):</strong> প্রথমবার অনিচ্ছাকৃত ছোট ভুলের ক্ষেত্রে সতর্ক করা।</li>
+        <li><strong>ডিসকোয়ালিফিকেশন ও পুরস্কার বাতিল:</strong> নির্দিষ্ট ম্যাচ থেকে বাতিল করা এবং সেই ম্যাচের সকল কিল/র‍্যাংক পুরস্কার স্থগিত করা (Entry Fee অফেরতযোগ্য)।</li>
+        <li><strong>অস্থায়ী স্থগিতাদেশ (Temporary Freeze):</strong> সন্দেহজনক লেনদেন বা চিটিং তদন্ত চলাকালীন সাময়িকভাবে উইথড্রয়াল ও টুর্নামেন্ট অ্যাক্সেস বন্ধ রাখা।</li>
+        <li><strong>স্থায়ী নিষেধাজ্ঞা (Permanent Ban):</strong> হ্যাকিং, ভুয়া TrxID, একাধিক অ্যাকাউন্ট বা ইচ্ছাকৃত প্রতারণায় অ্যাকাউন্ট চিরতরে ব্যান করা।</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>৯. আইনি ডিসক্লেইমার, পরিবর্তন ও যোগাযোগ</h2>
+      <ul>
+        <li><strong>স্বাধীন প্ল্যাটফর্ম ডিসক্লেইমার:</strong> FF Tournament একটি স্বাধীন গেমিং টুর্নামেন্ট প্ল্যাটফর্ম; এটি Garena International বা Free Fire-এর কোনো অফিসিয়াল বা অনুমোদিত সহযোগী প্রতিষ্ঠান নয়।</li>
+        <li><strong>শর্তাবলি পরিবর্তন:</strong> সেবার মানোন্নয়ন বা নিরাপত্তার প্রয়োজনে কর্তৃপক্ষ যেকোনো সময় এই শর্তাবলি ও টুর্নামেন্টের নিয়ম আপডেট করার অধিকার রাখে।</li>
+        <li><strong>সাপোর্ট ও অভিযোগ:</strong> যেকোনো পেমেন্ট সমস্যা, ম্যাচ আপিল বা প্রশ্নের জন্য অ্যাপের <strong>Help &amp; Customer Support</strong> অপশন ব্যবহার করে টিকিট খুলুন।</li>
+      </ul>
+    </div>
+
+    <div class="footer-note">
+      &copy; 2026 FF Tournament. সর্বস্বত্ব সংরক্ষিত।
+    </div>
+  </div>
+</body>
+</html>
+
